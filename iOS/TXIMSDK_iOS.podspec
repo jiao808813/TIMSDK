@@ -19,6 +19,7 @@ Pod::Spec.new do |spec|
   spec.source = { :http => 'https://imsdk-1252463788.cos.ap-guangzhou.myqcloud.com/4.7.1/TIM_SDK_iOS_latest_framework.zip'}
   spec.preserve_paths = '**/ImSDK.framework'
   spec.source_files = '**/ImSDK.framework/Headers/*.h'
+  spec.resource_bundle = {"TXIMSDK_iOS.privacy"=>"Pod/Privacy/TXIMSDK_iOS/PrivacyInfo.xcprivacy"}
   spec.public_header_files = '**/ImSDK.framework/Headers/*.h'
   spec.vendored_frameworks = '**/ImSDK.framework'
   spec.xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/TXIMSDK_iOS/ImSDK.framework/Headers/'}
